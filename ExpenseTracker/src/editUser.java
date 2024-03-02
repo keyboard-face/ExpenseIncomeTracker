@@ -25,20 +25,13 @@ public class editUser extends JFrame {
 	@SuppressWarnings("unused")
 	private UserProfile user;
 
-	/**
-	 * Launch the application.
-	 */
 
-
-	/**
-	 * Create the frame.
-	 */
 	public editUser(UserProfile user) {
 		this.user = user;
 		
 		setTitle("Edit User");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 325, 201);
+		setBounds(100, 100, 325, 261);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -105,6 +98,19 @@ public class editUser extends JFrame {
 		JButton newPasswordButton = new JButton("Enter");
 		newPasswordButton.setBounds(210, 119, 89, 23);
 		contentPane.add(newPasswordButton);
+		
+		JButton finishedButton = new JButton("Save");
+		finishedButton.setBounds(210, 188, 89, 23);
+		contentPane.add(finishedButton);
+		
+		finishedButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	ExpenseTrackerGUI frame = new ExpenseTrackerGUI(user);
+            	dispose();
+            	frame.setVisible(true);
+            }
+    });
 	
 		newPasswordButton.addActionListener(new ActionListener() {
             @Override
