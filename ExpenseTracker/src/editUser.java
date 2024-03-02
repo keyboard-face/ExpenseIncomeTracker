@@ -115,7 +115,8 @@ public class editUser extends JFrame {
 		newPasswordButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	String updatedPassword = newPasswordLabel.getText();
+            	char[] updatedPasswordChars = passwordField.getPassword();
+                String updatedPassword = new String(updatedPasswordChars);
             	user.updatePassword(updatedPassword);
             	System.out.println(user.getPassword());
             }
