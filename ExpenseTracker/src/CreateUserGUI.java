@@ -122,7 +122,7 @@ public class CreateUserGUI extends JFrame {
 		
 		UserProfile user = new UserProfile(firstName, lastName, password);
 		System.out.println(user);
-		ExpenseTrackerGUI expenseTrackerGUI = new ExpenseTrackerGUI();
+		ExpenseTrackerGUI expenseTrackerGUI = new ExpenseTrackerGUI(user);
         expenseTrackerGUI.setVisible(true);
      
 	}

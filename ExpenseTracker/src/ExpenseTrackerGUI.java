@@ -18,10 +18,14 @@ public class ExpenseTrackerGUI extends JFrame {
     private final JButton editUser;
     private final JLabel balanceLabel;
     private double balance; // The current balance based on the added expenses and incomes.
+	@SuppressWarnings("unused")
+	private UserProfile user;
 
 	
     // Constructor to initialize the application and set up the form.
-    public ExpenseTrackerGUI() {
+    public ExpenseTrackerGUI(UserProfile user) {
+    	this.user = user;
+    	
         try{
             // Apply the NimbusLookAndFeel
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
@@ -72,7 +76,7 @@ public class ExpenseTrackerGUI extends JFrame {
         editUser.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-            	editUser edit = new editUser();
+            	editUser edit = new editUser(user);
             	dispose();
             	edit.setVisible(true);
             }
