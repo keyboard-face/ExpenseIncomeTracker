@@ -1,2 +1,2 @@
 # ExpenseIncomeTracker
-CEN4010 class projectect
+CEN4010 class project
