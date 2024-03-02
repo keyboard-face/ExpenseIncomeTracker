@@ -7,6 +7,7 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
 import javax.swing.JPasswordField;
+import javax.swing.JButton;
 
 public class CreateUserGUI extends JFrame {
 
@@ -38,7 +39,7 @@ public class CreateUserGUI extends JFrame {
 	public CreateUserGUI() {
 		setTitle("Create user");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 302, 194);
+		setBounds(100, 100, 302, 218);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -78,5 +79,9 @@ public class CreateUserGUI extends JFrame {
 		passwordField = new JPasswordField();
 		passwordField.setBounds(97, 119, 86, 20);
 		contentPane.add(passwordField);
+		
+		JButton btnNewButton = new JButton("Create!");
+		btnNewButton.setBounds(187, 145, 89, 23);
+		contentPane.add(btnNewButton);
 	}
 }
