@@ -1,8 +1,7 @@
 
-
-import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.UIManager;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -13,26 +12,20 @@ public class UserLoginGUI extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
-	/**
-	 * Launch the application.
-	 */
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					UserLoginGUI frame = new UserLoginGUI();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+
+    public UserLoginGUI() {
+        try{
+            // Apply the NimbusLookAndFeel
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+        }
+        catch(Exception ex){
+            System.err.println("Failed to Set NimbusLookAndFeel");
+        }
 
 	/**
 	 * Create the frame.
 	 */
-	public UserLoginGUI() {
+
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
