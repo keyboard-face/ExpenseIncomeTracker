@@ -1,6 +1,5 @@
-
-
 import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -33,38 +32,37 @@ public class UserLoginGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public UserLoginGUI() {
+		setTitle("Welcome Screen");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		
-		JFrame frmUserLogin = new JFrame();
-		frmUserLogin.setTitle("User Login");
-		frmUserLogin.getContentPane().setLayout(null);
-		
-		JLabel Title = new JLabel("Welcome to Expense Tracker!");
-		Title.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		Title.setBounds(88, 11, 277, 44);
-		frmUserLogin.getContentPane().add(Title);
-		
-		JLabel newUser = new JLabel("New User?");
-		newUser.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		newUser.setBounds(182, 66, 68, 23);
-		frmUserLogin.getContentPane().add(newUser);
-		
-		JButton createAccount = new JButton("Create Account...");
-		createAccount.setBounds(149, 93, 136, 23);
-		frmUserLogin.getContentPane().add(createAccount);
-		
-		JLabel askAccount = new JLabel("Have an account?");
-		askAccount.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		askAccount.setBounds(162, 139, 110, 23);
-		frmUserLogin.getContentPane().add(askAccount);
-		
-		JButton signIn = new JButton("Sign in...");
-		signIn.setBounds(172, 175, 89, 23);
-		frmUserLogin.getContentPane().add(signIn);
 
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Welcome to Expense Tracker!!");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
+		lblNewLabel.setBounds(91, 22, 267, 31);
+		contentPane.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("New User?");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNewLabel_1.setBounds(185, 64, 69, 22);
+		contentPane.add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("Create user");
+		btnNewButton.setBounds(173, 97, 89, 23);
+		contentPane.add(btnNewButton);
+		
+		JLabel lblNewLabel_2 = new JLabel("Have an account?");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		lblNewLabel_2.setBounds(164, 142, 112, 31);
+		contentPane.add(lblNewLabel_2);
+		
+		JButton btnNewButton_1 = new JButton("Sign in");
+		btnNewButton_1.setBounds(173, 175, 89, 23);
+		contentPane.add(btnNewButton_1);
 	}
+
 }
