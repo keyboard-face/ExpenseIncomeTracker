@@ -8,7 +8,7 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import javax.swing.JButton;
 
-public class WindowPractice extends JFrame {
+public class UserLoginGUI extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
@@ -20,7 +20,7 @@ public class WindowPractice extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					WindowPractice frame = new WindowPractice();
+					UserLoginGUI frame = new UserLoginGUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -32,7 +32,7 @@ public class WindowPractice extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public WindowPractice() {
+	public UserLoginGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
