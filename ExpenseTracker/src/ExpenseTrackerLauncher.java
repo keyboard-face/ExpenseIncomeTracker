@@ -5,5 +5,4 @@ public class ExpenseTrackerLauncher {
 		UserLoginGUI frame = new UserLoginGUI();
 		frame.setVisible(true);
 	}
-
 }
