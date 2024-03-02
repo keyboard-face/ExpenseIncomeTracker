@@ -6,6 +6,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 import java.awt.Font;
+import javax.swing.JPasswordField;
 
 public class CreateUserGUI extends JFrame {
 
@@ -13,6 +14,7 @@ public class CreateUserGUI extends JFrame {
 	private JPanel contentPane;
 	private JTextField textField;
 	private JTextField textField_1;
+	private JPasswordField passwordField;
 
 	/**
 	 * Launch the application.
@@ -67,5 +69,14 @@ public class CreateUserGUI extends JFrame {
 		textField_1.setBounds(97, 84, 86, 20);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
+		
+		JLabel lblNewLabel_3 = new JLabel("Password:");
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel_3.setBounds(29, 121, 59, 14);
+		contentPane.add(lblNewLabel_3);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(97, 119, 86, 20);
+		contentPane.add(passwordField);
 	}
 }
