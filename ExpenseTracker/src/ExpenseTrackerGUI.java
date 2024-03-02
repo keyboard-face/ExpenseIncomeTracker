@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 //no intention to serialize the class
 @SuppressWarnings("serial")
@@ -13,6 +15,7 @@ public class ExpenseTrackerGUI extends JFrame {
     private final JTextField amountField;
     private final JComboBox<String> typeCombobox;
     private final JButton addButton;
+    private final JButton editUser;
     private final JLabel balanceLabel;
     private double balance; // The current balance based on the added expenses and incomes.
 
@@ -65,6 +68,16 @@ public class ExpenseTrackerGUI extends JFrame {
         addButton.addActionListener(e -> addEntry());
         balanceLabel = new JLabel("Balance: $" + balance);
         
+        editUser = new JButton("Edit User");
+        editUser.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	editUser edit = new editUser();
+            	dispose();
+            	edit.setVisible(true);
+            }
+    });
+        
         // Create input panel to arrange input components.
         JPanel inputPanel = new JPanel();
         inputPanel.add(new JLabel("Date"));
@@ -85,6 +98,7 @@ public class ExpenseTrackerGUI extends JFrame {
         JPanel bottomPanel = new JPanel(new FlowLayout(FlowLayout.RIGHT));
         bottomPanel.add(balanceLabel);
         setLayout(new BorderLayout());
+        bottomPanel.add(editUser);
         
         // Set the layout of the main frame and add components to appropriate positions.
         add(inputPanel, BorderLayout.NORTH);
