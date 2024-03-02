@@ -2,7 +2,9 @@
 public class ExpenseTrackerLauncher {
 
 	public static void main(String[] args) {
-		new ExpenseTrackerGUI().setLocationRelativeTo(null);
+		UserLoginGUI frame = new UserLoginGUI();
+		frame.setVisible(true);
+		// new ExpenseTrackerGUI().setLocationRelativeTo(null);
 	}
 
 }

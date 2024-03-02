@@ -5,7 +5,6 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import javax.swing.SwingUtilities;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -90,18 +89,15 @@ public class CreateUserGUI extends JFrame {
 		createButton.setBounds(187, 145, 89, 23);
 		contentPane.add(createButton);
 		
-		  createButton.addActionListener(new ActionListener() {
+		createButton.addActionListener(new ActionListener() {
 	            @Override
 	            public void actionPerformed(ActionEvent e) {
 	            	createUser();
+	            	dispose();
 	            }
-	        });
+	    });
 	}
-	
-	private void closeCreateUserGUI() {
-		 SwingUtilities.getWindowAncestor(this).dispose();
-	}
-	
+
 	private void createUser() {
 		String firstName = fnameField.getText();
 		String lastName = lnameField.getText();
@@ -128,7 +124,6 @@ public class CreateUserGUI extends JFrame {
 		System.out.println(user);
 		ExpenseTrackerGUI expenseTrackerGUI = new ExpenseTrackerGUI();
         expenseTrackerGUI.setVisible(true);
-        
-        closeCreateUserGUI();
+     
 	}
 }

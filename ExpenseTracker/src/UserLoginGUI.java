@@ -5,6 +5,9 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import javax.swing.JButton;
 
 public class UserLoginGUI extends JFrame {
@@ -41,28 +44,44 @@ public class UserLoginGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("Welcome to Expense Tracker!!");
-		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
-		lblNewLabel.setBounds(91, 22, 267, 31);
-		contentPane.add(lblNewLabel);
+		JLabel welcomeLabel = new JLabel("Welcome to Expense Tracker!!");
+		welcomeLabel.setFont(new Font("Tahoma", Font.BOLD, 17));
+		welcomeLabel.setBounds(91, 22, 267, 31);
+		contentPane.add(welcomeLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("New User?");
-		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		lblNewLabel_1.setBounds(185, 64, 69, 22);
-		contentPane.add(lblNewLabel_1);
+		JLabel newUserLabel = new JLabel("New User?");
+		newUserLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		newUserLabel.setBounds(185, 64, 69, 22);
+		contentPane.add(newUserLabel);
 		
-		JButton btnNewButton = new JButton("Create user");
-		btnNewButton.setBounds(173, 97, 89, 23);
-		contentPane.add(btnNewButton);
+		JButton createUserButton = new JButton("Create user");
+		createUserButton.setBounds(173, 97, 89, 23);
+		contentPane.add(createUserButton);
 		
-		JLabel lblNewLabel_2 = new JLabel("Have an account?");
-		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 13));
-		lblNewLabel_2.setBounds(164, 142, 112, 31);
-		contentPane.add(lblNewLabel_2);
+		JLabel accountLabel = new JLabel("Have an account?");
+		accountLabel.setFont(new Font("Tahoma", Font.PLAIN, 13));
+		accountLabel.setBounds(164, 142, 112, 31);
+		contentPane.add(accountLabel);
 		
-		JButton btnNewButton_1 = new JButton("Sign in");
-		btnNewButton_1.setBounds(173, 175, 89, 23);
-		contentPane.add(btnNewButton_1);
+		JButton signInButton = new JButton("Sign in");
+		signInButton.setBounds(173, 175, 89, 23);
+		contentPane.add(signInButton);
+	
+		createUserButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+            	CreateUserGUI createUser = new CreateUserGUI();
+            	dispose();
+            	createUser.setVisible(true);
+            }
+    });
+	
 	}
+	
+	
+	
+	
+	
+	
 
 }
