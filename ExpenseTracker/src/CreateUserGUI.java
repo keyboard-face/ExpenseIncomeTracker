@@ -98,7 +98,7 @@ public class CreateUserGUI extends JFrame {
 	    });
 	}
 
-	public UserProfile createUser() {
+	public void createUser() {
 		String firstName = fnameField.getText();
 		String lastName = lnameField.getText();
 		char[] passwordChars = passwordField.getPassword();
@@ -107,24 +107,24 @@ public class CreateUserGUI extends JFrame {
 		if(firstName.isEmpty())
         {
             JOptionPane.showMessageDialog(this, "Enter your first name", "Error", JOptionPane.ERROR_MESSAGE);
-           
+           return;
         }
 		if(lastName.isEmpty())
         {
             JOptionPane.showMessageDialog(this, "Enter your last name", "Error", JOptionPane.ERROR_MESSAGE);
-            
+            return;
         }
 		if(password.isEmpty())
         {
             JOptionPane.showMessageDialog(this, "Enter a password", "Error", JOptionPane.ERROR_MESSAGE);
-            
+            return;
         }
 
 		UserProfile user = new UserProfile(firstName, lastName, password);
+		System.out.println(user);
 		ExpenseTrackerGUI expenseTrackerGUI = new ExpenseTrackerGUI(user);
         expenseTrackerGUI.setVisible(true);
-		return user;
-
+	
      
 	}
 }
