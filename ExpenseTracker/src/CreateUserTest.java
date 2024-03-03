@@ -2,10 +2,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
-class CreateUserTest {
+class ExpenseTrackerTest {
 
 	@Test
-	void test() {
+	void TestCreateUser() {
 		fail("Not yet implemented");
 	}
 
