@@ -1,0 +1,220 @@
+commit fb354e4c87496ac475e50c360159f4035b4d0e62
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sun Mar 3 11:36:34 2024 -0500
+
+    Create ExpenseTrackerTest.class
+
+commit d452b07270574dba63c932751dbd3731d121c95d
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sun Mar 3 11:28:21 2024 -0500
+
+    made a test case
+
+commit 10eb4475dffcaede08925125a981ea8469c66168
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 17:42:01 2024 -0500
+
+    Update editUser.java
+
+commit 5e27359163f673b432d6d983ae3da38722288732
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 17:34:46 2024 -0500
+
+    Update ExpenseTrackerLauncher.java
+
+commit 48e56e74a0359adfb65e6a98f4b802fadcfd7f36
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 17:33:27 2024 -0500
+
+    change expensetracker line
+
+commit 247e3e382d7601f48cea59591f70bb02afb60e53
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 17:31:59 2024 -0500
+
+    Update editUserGUI
+    
+    Go back button to expense tracker GUI
+
+commit b88d6398e7316a990898b4f39d714b610e24e6b5
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 17:28:12 2024 -0500
+
+    jfdiajfoedjfidsofjosa
+    
+    dfa
+
+commit ca639eba2911a11a59cfd62e30715e0363645169
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 16:50:06 2024 -0500
+
+    Created edit user GUI
+    
+    Added a button to expense tracker GUI and some functionality
+
+commit 253d63c6c7b2504bd2921feedc010f244b49b272
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 16:28:21 2024 -0500
+
+    flow is working
+    
+    ayeee
+
+commit 6d177b8b9aeaa8c961e9ee141471b2d68bd2f02f
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 16:03:58 2024 -0500
+
+    Update CreateUserGUI.java
+
+commit 574fad03137746e6247a3892a2d84f5f33fd9539
+Merge: f14f0d4 e488942
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 16:01:31 2024 -0500
+
+    Merge pull request #4 from keyboard-face/delanie2
+    
+    Delanie2
+
+commit e488942d65028e18ff8d93055d06dd1d256ee944
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 16:00:59 2024 -0500
+
+    Backend of createUser GUI
+
+commit f14f0d44bd88f91baf7bc9a05a49d4febc7aeb74
+Merge: afb1c5a ed975bf
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 15:25:03 2024 -0500
+
+    Merge pull request #3 from keyboard-face/User-Update-Branch
+    
+    UserProfile class methods push to include the update methods
+
+commit ed975bf37bf45b61938f2201e84ed38bb63ae8a2
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 15:22:25 2024 -0500
+
+    UserProfile class methods push
+    
+    added update methods for each of the data values included in userProfile to be used when a user edits their profile.
+
+commit c3e9b572613ac1a83451eea99a5b53233c407b6c
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 15:07:03 2024 -0500
+
+    Update CreateUserGUI.java
+    
+    Added a submit button!
+
+commit afb1c5aa37a07e75b30f1da122c7ea475cee4acb
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 15:04:03 2024 -0500
+
+    user update
+    
+    updated the user class to include a password variable as well as its corresponding functions.
+
+commit fc0386076185b8a4fe5b550c512212df9eee79bb
+Merge: 61544e7 f14f3f1
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 14:54:53 2024 -0500
+
+    Merge pull request #2 from keyboard-face/Kenny
+    
+    user class push
+
+commit f14f3f11aeb38f3149187197c94cb485c03181f9
+Merge: 98b51d5 61544e7
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 14:54:43 2024 -0500
+
+    Merge branch 'main' into Kenny
+
+commit 61544e7ca61b249192b60cd4691350d9476bf11f
+Merge: 17fc279 153dcf6
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:52:19 2024 -0500
+
+    Merge pull request #1 from keyboard-face/delanie
+    
+    Created GUIs
+
+commit 153dcf635b3ad675b18a6b1fe310d317e18b0660
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:51:14 2024 -0500
+
+    Update CreateUserGUI.java
+
+commit 49f51c5934cf339eab85b39cb428775becd70bd1
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:47:48 2024 -0500
+
+    CreateUserGUI made
+    
+    done
+
+commit 98b51d558616d56e50d72ba89e47d2be08f732ce
+Author: Keons2448 <131809579+Keons2448@users.noreply.github.com>
+Date:   Sat Mar 2 14:41:08 2024 -0500
+
+    user class push
+    
+    implemented the user class and pushed it to my personal branch.
+
+commit 96c1c28290cb1f18a5bd29555dd4cad35d13a493
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:26:23 2024 -0500
+
+    created splash screen
+
+commit 17fc279eb4a6da8a5795bd5060af49777fee92e4
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:06:30 2024 -0500
+
+    del
+
+commit 3cbd94962d8a87204b7cb8280a2d9a95c75fd573
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 14:05:06 2024 -0500
+
+    sheeeeee
+
+commit 385c3240c23678fbc03fbf7e657cece246a8514a
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 13:52:30 2024 -0500
+
+    Changed windowpractice name to UserLoginGUI
+    
+    push
+
+commit bcc4cf242d10c2a21ec9884533574a6126a37e71
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 13:50:20 2024 -0500
+
+    hrhhh
+
+commit 1e25737406c520ef78b7a3d06571a76b1a4b44f8
+Author: crewsdel <124068095+crewsdel@users.noreply.github.com>
+Date:   Sat Mar 2 13:42:12 2024 -0500
+
+    gf
+
+commit 4a45e50c6ba18e8934b336b23b9435d51ea9213b
+Author: keyboard-face <157912496+keyboard-face@users.noreply.github.com>
+Date:   Sat Mar 2 13:21:00 2024 -0500
+
+    Added basic GUI Classes
+    
+    Hope I did that right
+
+commit feaae7d48f4c34dca1aa722a70293f8cd9b3b803
+Author: keyboard-face <157912496+keyboard-face@users.noreply.github.com>
+Date:   Sat Mar 2 13:09:00 2024 -0500
+
+    Update README.md
+
+commit 648187c6395940582f050725a2b6e3d83de1deec
+Author: keyboard-face <157912496+keyboard-face@users.noreply.github.com>
+Date:   Sat Mar 2 13:08:39 2024 -0500
+
+    Initial commit
